@@ -4,6 +4,12 @@
   "scripts": {
     "build": "node ./node_modules/parcel/bin/dev-bin.js build"
   },
+  "targets": {
+    "default": {
+      "source": "./src/index.js",
+      "distDir": "./dist"
+    }
+  },
   "overrides": {
     "@parcel/validator-typescript": "file:/home/dalsh/Development/parcel-bundler/parcel/packages/validators/typescript",
     "@parcel/validator-eslint": "file:/home/dalsh/Development/parcel-bundler/parcel/packages/validators/eslint",
@@ -142,12 +148,6 @@
     "@parcel/compressor-brotli": "file:/home/dalsh/Development/parcel-bundler/parcel/packages/compressors/brotli",
     "@parcel/bundler-library": "file:/home/dalsh/Development/parcel-bundler/parcel/packages/bundlers/library",
     "@parcel/bundler-default": "file:/home/dalsh/Development/parcel-bundler/parcel/packages/bundlers/default"
-  },
-  "targets": {
-    "default": {
-      "source": "./src/index.html",
-      "distDir": "./dist"
-    }
   },
   "devDependencies": {
     "@parcel/validator-typescript": "file:/home/dalsh/Development/parcel-bundler/parcel/packages/validators/typescript",
